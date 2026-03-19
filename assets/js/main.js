@@ -1,5 +1,12 @@
 /* ── PubGolfClub — main.js ── */
 
+// Infinite slider: duplicate content for seamless loop
+const sliderInner = document.getElementById('sliderInner');
+if (sliderInner) {
+  sliderInner.innerHTML += sliderInner.innerHTML;
+}
+
+
 // Nav: add background on scroll
 const nav = document.getElementById('nav');
 if (nav) {
