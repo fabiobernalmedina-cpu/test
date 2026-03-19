@@ -665,18 +665,22 @@ input, textarea, select { font-family: inherit; }
 
 /* ── Infinite Slider ───────────────────────────────────────── */
 .slider {
-  background: var(--amber);
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
   padding: 1rem 0;
-  border-top: 1px solid rgba(0,0,0,0.08);
-  border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
 .slider__track {
+  background: var(--amber);
+  border-radius: 999px;
   overflow: hidden;
+  max-width: 700px;
+  width: 100%;
+  padding: 0.75rem 0;
+  border: 1px solid rgba(0,0,0,0.08);
   white-space: nowrap;
-  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 10%, #000 90%, transparent 100%);
-  mask-image: linear-gradient(90deg, transparent 0%, #000 10%, #000 90%, transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 12%, #000 88%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 12%, #000 88%, transparent 100%);
 }
 
 .slider__inner {
